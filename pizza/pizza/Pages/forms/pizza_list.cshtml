@@ -1,0 +1,57 @@
+﻿@page
+@model pizza.Pages.pizza_listModel
+@{
+}
+<h2> * Create your owner Pizza * </h2>
+<br />
+<form method="POST">
+    
+    <h5>....list of pizza....</h5><br />
+  
+
+    <table border="0" style="text-align">
+        <tr>
+            <td>TometoSauce</td>
+            <td>Cheese</td>
+            <td>Peperomi</td>
+            <td>Mushroom</td>
+            
+            
+        </tr>
+        <tr>
+            <td><img src="/image/image/Tomato sauce .png" /></td>
+            <td><img src="/image/image/Cheese .png" /></td>
+            <td><img src="/image/image/Pepperoni .png" /></td>
+            <td><img src="/image/image/mushroom.png" /></td>
+            
+        </tr>
+       
+        <tr>
+            <td>Tuna</td>
+            <td>Ham</td>
+            <td>Beef</td>
+
+        </tr>
+        <tr>
+            <td><img src="/image/image/Tuna.png" /></td>
+            <td><img src="/image/image/Ham.png" /></td>
+            <td><img src="/image/image/Beef.png" /></td>
+        </tr>
+        
+    </table>
+
+    <br />
+    <input type="text" placeholder="Enter your pizza name" asp-for="pizzas.pizzaName" />
+    <br />
+
+    <!--<input type="checkbox" asp-for="pizzas.TometoSauce" />TometoSauce<br />
+    <input type="checkbox" asp-for="pizzas.Cheese" />Cheese<br />
+    <input type="checkbox" asp-for="pizzas.Peperomi" />Peperomi<br />
+    <input type="checkbox" asp-for="pizzas.Mushroom" />Mushroom<br />
+    <input type="checkbox" asp-for="pizzas.Tuna" />Tuna<br />
+    <input type="checkbox" asp-for="pizzas.Ham" />Ham<br />
+    <input type="checkbox" asp-for="pizzas.Beef" />Beef<br />-->
+
+    <button type="submit" class="btn btn-primary mt-2">Complete Order</button>
+
+</form>
